@@ -1,5 +1,4 @@
 % Bisection Method to find the roots of a function
-%{
 clc, clearvars
 f = @(x) x^3 - 5*x + 4;
 
@@ -20,19 +19,3 @@ for i=-n:h:n
         fprintf('%f\n',c)
     end
 end
-%}
-
-clc, clearvars
-f = @(x) x^3 - 5*x + 4;
-a=1;b=2;epsillon =0.1;
-error=b-a;
-while error>=epsillon
-    c = a + (b-a)/2;
-    if f(c)*f(b) < 0
-        a=c;
-    else
-        b=c;
-    end
-    error = b - a;
-end
-fprintf('%f\n',c)
