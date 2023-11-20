@@ -1,5 +1,4 @@
 %Secant method to find the roots of a fn
-%{
 clc, clearvars
 f = @(x) x*exp(x) - cos(x);
 
@@ -20,17 +19,3 @@ for i=0:h:5
         fprintf("%f\t%d\n",x0,itr);
     end
 end
-%}
-clc, clearvars
-f = @(x) x*exp(x)-cos(x);
-a=1.101111;b=2;x0 = abs((a*f(b)-b*f(a))/(f(a)-f(b)));
-itr=1;
-error=b-a;epsillon = 0.0001;
-while error>epsillon
-    a=b;
-    b=x0;
-    x0 = abs((a*f(b)-b*f(a))/(f(a)-f(b)));
-    itr = itr + 1;
-    error=abs(b-a);
-end
-fprintf("%f\n%d",x0, itr);
