@@ -6,6 +6,7 @@ x0 = 1;
 
 h = 0.2;
 N = (x0 - a)/h;
+
 y1 = zeros(1, N);
 x1 = zeros(1, N);
 y1(1) = b;
