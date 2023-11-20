@@ -1,5 +1,5 @@
 %modified Euler's method - 
-% y*(n+1) = y(n) + h * f(x(n), y(n)); h=(x0-a)/slice <- simple euler
+% y*(n+1) = y(n) + h * f(x(n), y(n)); h=(x0-a)/slice <- simple Euler
 % now y(n+1) = y(n) + (h/2) * [f(x(n), y(n)) + f(x(n+1), y*(n+1))]
 
 clc, clearvars
