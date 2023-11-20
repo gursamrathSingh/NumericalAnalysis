@@ -15,5 +15,5 @@ while norm(x0-x, "inf") >= 0.0001
     x0 = y1 / norm(y1, "inf");
 end
 fprintf('Max Eigen Val- %f\n', norm(y1, "inf"));
-disp('eigen vector- ');
+disp('eigen vector-');
 disp(x0');
