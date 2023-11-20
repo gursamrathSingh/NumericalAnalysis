@@ -1,5 +1,5 @@
 %Trapezoidal Rule to find a definite integral val i.e. a Quadrature
-%composite trapezoidal
+%composite trapezoidal-
 clc, clearvars
 f = @(x) 1/(x*log(x));
 a = 2.71828;
@@ -14,6 +14,8 @@ end
 sum = f(a) + 2*sum + f(b);
 answer = (h/2)*sum;
 disp(answer);
+
+
 %{
 %Q4
 clc, clearvars
