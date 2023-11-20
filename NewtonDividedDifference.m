@@ -1,6 +1,5 @@
 % Newton's Divided Difference method for interpolating polynomial
 clc, clearvars
-
 x = [-1, 0, 1, 2];
 f = [3, -4, 5, -6];
 
