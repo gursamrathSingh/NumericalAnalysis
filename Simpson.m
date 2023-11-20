@@ -2,7 +2,7 @@
 clc, clearvars
 f = @(x) 1/(x*log(x));
 a = 2.718282; b = 3.71828;
-N = 2; %<- N must be even!
+N = 2; %N must be even!
 
 h = (b-a)/N;
 even = 0; odd = 0;
