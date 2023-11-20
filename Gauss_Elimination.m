@@ -4,7 +4,7 @@ b = [-2,-1,0,1];
 a = [A, b'];
 n = 4;
 
-%upper triangular matrix-3
+%upper triangular matrix
 for i=1:n
     for j=i+1:n
         a(j, :) = a(j, :) - a(i, :)*a(j,i)/a(i,i);
