@@ -1,4 +1,4 @@
-%LU Decomposition with Solution
+%LU Decomposition
 mat = [-1 4 1; 5/3 2/3 2/3; 2 1 4];
 b = [8; 1; 11];
 n = 3;
